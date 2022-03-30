@@ -1,0 +1,393 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[lmargin=2cm,rmargin=2cm,tmargin=0.8cm,bmargin=1cm]{geometry}
+\linespread{1.5}
+\usepackage{graphicx}
+\usepackage{here}
+
+\usepackage{listings}
+\usepackage{diagbox}
+\usepackage{array}
+\usepackage{hhline}
+\usepackage{framed}
+%\usepackage{xcolor}
+
+
+\usepackage{multirow}
+\usepackage[table,xcdraw]{xcolor}
+%\usepackage[dvipsnames,x11names,table]{xcolor}
+\definecolor{azul}{rgb}{0.0, 0.33, 0.71}
+%PAQUETES MATEMÁTICOS:
+
+
+
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{mathptmx}
+\usepackage{mathrsfs}%paquete para letras caligráficas
+\usepackage{latexsym}%para obtener simbolos matemáticos
+
+\pagenumbering{roman}
+
+%PAQUETE PARA ENUMERAR LAS ECUACIONES POR SECCIÓN:
+\numberwithin{equation}{section}
+\newtheorem{teo}{Teorema}[section]
+\theoremstyle{definition}
+\newtheorem{defi}{Definición}[section]
+\newtheorem{lem}{Lema}[section]
+
+
+
+%RENOMBRANDO LOS COMANDOS:
+
+\renewcommand{\abstractname}{Resumen}
+\renewcommand{\listfigurename}{Gráficos.}
+%\renewcommand{\listtablename}{Tablas de mi reporte.}
+\renewcommand{\contentsname}{Índice}
+
+\renewcommand{\figurename}{Figura}
+\renewcommand{\tablename}{Tabla}
+
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{}
+\chead{}
+\rhead{\thepage}
+\lfoot{}
+\cfoot{}
+\rfoot{}
+\renewcommand{\headrulewidth}{0mm}
+\renewcommand{\footrulewidth}{0mm}
+
+%PAQUETE DE TIKZ:
+%\usepackage[x11names]{xcolor}
+%\usepackage{tikz}
+
+%\newcommand*{\tikzgrid}[2]{\draw[help lines](0,0)grid[step=0.2,lightgray,ultra thin](#1,#2);\draw[help lines](0,0)grid[gray](#1,#2);\foreach\x in{0,1,...,#1}\node[below]at(\x,0){\scriptsize\x};\foreach\y in{1,2,...,#2}\node[left]at(0,\y){\scriptsize\y};}
+
+%\usetikzlibrary{arrows.meta}
+%\usetikzlibrary{decorations.pathreplacing}
+
+
+
+
+ 
+\begin{document}
+
+
+\begin{framed}
+\centering{\bfseries
+\small{
+Año del Fortalecimiento de la Soberanía Nacional}}
+
+\begin{flushleft}  
+\begin{figure}[H]
+\includegraphics[scale=0.4]{sena}
+\end{figure}
+
+\hfill
+\vspace{-35 mm}
+
+\begin{flushright}
+\textbf{
+CERTIFICADO DE VERIFICACIÓN \\
+  DE TEMPERATURA  \hspace{10 mm}  
+ %N° 003-2022-T   \hspace{20 mm}              
+}
+\end{flushright} 
+
+\bfseries{
+{\small
+DIRECCIÓN DE REDES DE 
+\vspace{-2 mm}
+
+OBSERVACIÓN Y DATOS (DRD)
+\vspace{-2 mm}
+
+LAB. DE TERMOHIGROMETRÍA } }
+\end{flushleft}
+
+
+\hfill
+\vspace{-35 mm}
+
+\begin{flushright}
+\textbf{ N° 003-2022-T   \hspace{20 mm} 
+}
+\end{flushright}
+
+\vspace{-6 mm}
+\begin{flushright}
+\textbf{ Página 1 de 2   
+}
+\end{flushright}
+
+
+
+\vspace{-8mm}
+\textcolor{azul}{\rule{\linewidth}{0.5mm}}
+
+
+
+\vspace{1 mm}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%-------------------------INSTRUMENTOS PATRONES------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%% %%%%%PATRON N° 1 :
+\begin{table}[H]
+\centering
+\begin{tabular}{!{\vrule width 0.7pt}c!{\vrule width 0.7pt}c!{\vrule width 0.7pt}c!{\vrule width 0.7pt}c!{\vrule width 0.7pt}}
+\hline
+\rowcolor[HTML]{8DB4E2}
+\hline
+\textbf{Trazabilidad} & \textbf{Patrón de trabajo N° 1} & \textbf{N° Serie} & \textbf{Cert. Calibración} \\ \hline
+Laboratorio / Senamhi & Dostmann P795                   & 79512080045       & LCT-149-2019               \\ \hline
+\end{tabular}
+\end{table}
+
+\vspace{-4 mm}
+
+
+%%% %%%%%%%%%%%%%%%%%%%%%%%PATRON N° 2 :
+
+% Please add the following required packages to your document preamble:
+% \usepackage[table,xcdraw]{xcolor}
+% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+\begin{table}[H]
+\centering
+\begin{tabular}{!{\vrule width 0.7pt}c!{\vrule width 0.7pt}c!{\vrule width 0.7pt}c!{\vrule width 0.7pt}c!{\vrule width 0.7pt}}
+\hline
+\rowcolor[HTML]{8DB4E2} 
+\hline
+\textbf{Trazabilidad} & \textbf{Patrón de trabajo N° 2} & \textbf{N° Serie} & \textbf{Cert. Calibración} \\ \hline
+Laboratorio / Senamhi & Dostmann P795                   & 79512080072       & LCT-148-2019               \\ \hline
+\end{tabular}
+\end{table}
+
+
+
+%%%%%% Metodo y LUGAR DE VERIFICACIÓN:
+\begin{flushleft}
+{\bfseries
+Método de verificación:}
+
+La verificación se realizó tomando como referencia el:
+PC-017 "Procedimiento para la calibración de termómetros digitales"
+\end{flushleft}
+
+
+
+\begin{flushleft}
+{\bfseries
+Lugar de verificación:}
+
+Av. Edmundo Aguilar (Ex. Av. Las Palmas) S/N - Surco,Lima\\
+Laboratorio de Termohigrometría 
+\end{flushleft}
+
+
+
+
+\vspace{-4mm}
+\textcolor{azul}{\rule{\linewidth}{0.5mm}}
+
+
+%%%%%%%%% ----  -CARACTERISTICAS DEL EQUIPO A CALIBRAR--------%%%%%%%
+
+\begin{table}[H]
+\centering
+\begin{tabular}{!{\vrule width 0.7pt}
+>{\columncolor[HTML]{EFEFEF}}c !{\vrule width 0.7pt}
+>{\columncolor[HTML]{FFFFFF}}c !{\vrule width 0.7pt}
+>{\columncolor[HTML]{EFEFEF}}c !{\vrule width 0.7pt}
+>{\columncolor[HTML]{FFFFFF}}c !{\vrule width 0.7pt}}
+\noalign{\hrule height 0.6pt}
+Instrumento:  &  \begin{tabular}[|c|]{@{}c@{}}Sensor de temperatura y  \\  Humedad Relativa\end{tabular}  &  \begin{tabular}[|c|]{@{}c@{}}Condiciones  \\  Ambientales :\end{tabular} & \begin{tabular}[c]{@{}c@{}}  22.76  °C/ 25.66 °C \\ 69\% / 76\%Hr\end{tabular} \\ \hline
+Marca:                    &       VAISALA              &  Modelo:          & HMP155                  \\ \hline
+Serie/Cod. Patrimonial:   &       L3840375             &  Rango:           &      -20 °C a +50°C     \\ \hline
+Resolución:               &       0.01 °C               & Fecha:            & 15 de Marzo de 2022    \\ \hline
+Instrumentista:          &  Javierth   Enrique Arauco  & Procedencia:      & DRD/SGR               \\ \noalign{\hrule height 0.6pt}
+\end{tabular}
+\end{table}
+
+
+\vspace{-4mm}
+\rule{\linewidth}{0.5mm}
+
+
+%%%%% -------- DATOS DEL INSTRUMENTISTA---------- %%%
+\vspace{13 mm} 
+
+%% NOMBRE DEL INSTRUMENTISTA:
+Enrique Arauco, Javierth 
+\vspace{-2 mm}
+
+%% PUESTO: 
+{\bfseries Asistente de Red Observacional Nacional} 
+
+\vspace{-2 mm}
+
+%%% LUGAR DE TRABAJO:
+Laboratorio de Termohigrometría / SENAMHI 
+\vspace{-2 mm}
+
+ DRD/SGR
+
+
+\vspace{4mm}
+ \end{framed}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%% NUEVA PAGINA%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%% NUEVA PAGINA%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+\begin{framed}
+
+\vspace{-10 mm}
+
+\begin{flushleft}  
+\begin{figure}[H]
+\includegraphics[scale=0.4]{sena}
+\end{figure}
+
+\hfill
+\vspace{-35 mm}
+
+\begin{flushright}
+\textbf{
+CERTIFICADO DE VERIFICACIÓN \\
+  DE TEMPERATURA  \hspace{10 mm}  
+ %N° 003-2022-T   \hspace{20 mm}              
+}
+\end{flushright} 
+
+\bfseries{
+{\small
+DIRECCIÓN DE REDES DE 
+\vspace{-2 mm}
+
+OBSERVACIÓN Y DATOS (DRD)
+\vspace{-2 mm}
+
+LAB. DE TERMOHIGROMETRÍA } }
+\end{flushleft}
+
+
+\hfill
+\vspace{-35 mm}
+
+\begin{flushright}
+\textbf{ N° 003-2022-T   \hspace{20 mm}   
+}
+\end{flushright}
+
+
+
+\vspace{-6 mm}
+\begin{flushright}
+\textbf{ Página 2 de 2   
+}
+\end{flushright}
+
+
+
+\vspace{-8mm}
+
+\hspace{-7mm} \textcolor{azul}{\rule{\linewidth}{0.5mm}}
+
+
+
+\vspace{1 mm}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%% RESULTADOS%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+{\bfseries Tabla:}
+
+
+% Please add the following required packages to your document preamble:
+% \usepackage[table,xcdraw]{xcolor}
+% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+
+
+
+    
+
+\begin{table}[H]
+\centering
+\begin{tabular}{!{\vrule width 0.7pt}c!{\vrule width 0.7pt}c!{\vrule width 0.7pt}c!{\vrule width 0.7pt}c!{\vrule width 0.7pt}}
+\noalign{\hrule height 0.6pt}
+\rowcolor[HTML]{EFEFEF} 
+\textbf{\begin{tabular}[|c|]{@{}c@{}}Indicación   del \\    Termómetro \\       (°C)\end{tabular}} &  \textbf{\begin{tabular}[c|]{@{}c@{}}Temperatura\\      Conv. Verdadera\\      (°C)\end{tabular}} & \textbf{\begin{tabular}[c|]{@{}c@{}}Corrección \\       (°C)\end{tabular}} &  \textbf{\begin{tabular}[c|]{@{}c@{}}E.M.P.\\       (°C)\end{tabular}} \\ \noalign{\hrule height 0.6pt}
+-19.92       &      -19.923         &    -0.001                   &     ± 0,3       \\ \hline
+-9.52        &      -9.610          &    -0.088                   &     ± 0,3       \\ \hline
+0.16         &      0.145           &    -0.010                   &     ± 0,3       \\ \hline
+10.233       &      10.320          &     0.087                   &     ± 0,3       \\ \hline
+20.176       &      20.211          &     0.04                    &     ± 0,3       \\ \hline
+30.887       &      30.933          &     0.046                   &     ± 0,3        \\ \hline
+41.876       &      41.92           &     0.046                   &     ± 0,3        \\ \hline
+\end{tabular}
+\end{table}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+%%%%%%%%%%%%%%% GRAFICO  %%%%%%%%%%%%%%%%5
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5%%%%
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.8]{grafico1}
+\end{figure}
+
+%\begin{figure}[H]
+%	\centerline
+%	\includegraphics[scale=0.2]{grafico1}
+%	\end{figure}
+
+
+{\bfseries Conclusión: }
+
+El sensor de temperatura del aire marca: VAISALA, modelo: HMP 155, N° serie: L3840375, registra datos {\bfseries dentro } del error máximo permitido (E.M.P.) , por lo que se recomienda realizar las respectivas correcciones en los puntos medidos.
+
+
+El valor del Error Máximo Permisible (E.M.P.)  para temperatura es  de ± 0,3 °C en función a la  recomendación de la guía N° 08 de la OMM.
+
+\end{framed}
+
+\end{document}
